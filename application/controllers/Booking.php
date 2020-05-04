@@ -158,4 +158,19 @@ class Booking extends CI_Controller
     $this->dompdf->render();         
     $this->dompdf->stream("bukti-booking$id_user.pdf", array('Attachment' => 0));         
     // nama file pdf yang di hasilkan     
-} 
+}
+public function bookingDetail()     
+{         
+    $id_booking = $this->uri->segment(3);         
+    $data['judul'] = "Booking Detail";         
+    $data['user'] = $this->ModelUser->cekData(['email' => $this->session->userdata('email')])->row_array();         
+    $data['agt_booking'] = $this->db->query("select*from booking b, user u where b.id_user=u.id and b.id_booking='$id_booking'")->result_array();
+     $data['detail'] = $this->db->query("select id_buku,judul_buku,pengarang,penerbit,tahun_terbit from booking_de tail d, buku b where d.id_buku=b.id and d.id_booking='$id_booking'")->result_array(); 
+ 
+        $this->load->view('templates/header', $data);         
+        $this->load->view('templates/sidebar', $data);         
+        $this->load->view('templates/topbar', $data);         
+        $this->load->view('booking/booking-detail', $data);         
+        $this->load->view('templates/footer');     
+    } 
+}   
