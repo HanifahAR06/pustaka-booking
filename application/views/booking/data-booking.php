@@ -4,7 +4,7 @@
 			<tr>
  <td>                     
  	<div class="table-responsive full-width">                         
- 		<table class="table table-bordered table-striped tablehover" id="table-datatable">                             
+ 		<table class="table table-bordered table-striped table-hover" id="table-datatable">                             
  			<tr>                                 
  				<th>No.</th>                                 
  				<th>Buku</th>                                 

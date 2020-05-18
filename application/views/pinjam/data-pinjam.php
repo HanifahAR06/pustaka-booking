@@ -47,7 +47,7 @@
                                     } else {
                                       $status = "secondary";                                     
                                   } ?>
-                                   <td><i class="btn btn-out-line<?= $status; ?> btn-sm"><?= $p['status']; ?></i></td>
+                                   <td><i class="btn btn-outline-<?= $status; ?> btn-sm"><?= $p['status']; ?></i></td>
 
                                      <?php                                     
                                      if ($selisih < 0) {                                         

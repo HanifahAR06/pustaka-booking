@@ -29,7 +29,7 @@ class Booking extends CI_Controller
         if ($dtb < 1) {             
         	$this->session->set_flashdata('pesan', '<div class="alert alertmassege alert-danger" role="alert">Tidak Ada Buku dikeranjang</div>');             redirect(base_url());         
         } else {             
-        	$data['temp'] = $this->db->query("select image, judul_buku, penulis, penerbit, tahun_terbit,id_buku from te mp where id_user='$id_user'")->result_array();         
+        	$data['temp'] = $this->db->query("select image, judul_buku, penulis, penerbit, tahun_terbit,id_buku from temp where id_user='$id_user'")->result_array();         
         }         
         $data['judul'] = "Data Booking"; 
  
