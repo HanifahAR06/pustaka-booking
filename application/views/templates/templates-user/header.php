@@ -36,7 +36,7 @@
                       <a class="nav-item nav-link" data-toggle="modal" data-target="#daftarModal" href="#"><i class="fas fw fa-login"></i> Daftar</a> 
                       <a class="nav-item nav-link" data-toggle="modal" data-target="#loginModal" href="#"><i class="fas fw fa-login"></i> Log in</a>
                       <?php } ?> 
-                      <span class="nav-item nav-link nav-right" style="display:block; margin-left:20px;">Selamat Datang Aul cantik<b><?= $user; ?></b></span> 
+                      <span class="nav-item nav-link nav-right" style="display:block; margin-left:20px;">Selamat Datang<b><?= $user; ?></b></span> 
                   </div>
                    </div>
                     </div>

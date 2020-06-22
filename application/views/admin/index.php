@@ -56,7 +56,7 @@
               </div>
             </div>
             <div class="col-auto">
-              <a href="<?= base_url('user'); ?>"><i class="fas fa-user-tag fa-3x text-success"></i></a>
+              <a href="<?= base_url('pinjam'); ?>"><i class="fas fa-user-tag fa-3x text-success"></i></a>
             </div>
           </div>
         </div>
@@ -78,7 +78,7 @@
               </div>
             </div>
             <div class="col-auto">
-              <a href="<?= base_url('user'); ?>"><i class="fas fa-shopping-cart fa-3x text-danger"></i></a>
+              <a href="<?= base_url('pinjam/daftarBooking'); ?>"><i class="fas fa-shopping-cart fa-3x text-danger"></i></a>
             </div>
           </div>
         </div>
